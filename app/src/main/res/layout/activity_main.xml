@@ -9,20 +9,21 @@
     tools:context=".MainActivity">
 
     <TextView
-        android:id="@+id/NumTextView"
+        android:id="@+id/TextView"
         android:layout_width="339dp"
         android:layout_height="88dp"
+        android:layout_marginTop="80dp"
         android:text="@string/write_the_number"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.461"
+        app:layout_constraintHorizontal_bias="0.462"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.123" />
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/WriteNumText"
         android:layout_width="265dp"
         android:layout_height="83dp"
         android:layout_marginStart="108dp"
@@ -34,19 +35,20 @@
         tools:layout_editor_absoluteY="348dp" />
 
     <EditText
-        android:id="@+id/editTextText2"
+        android:id="@+id/WriteNumText2"
         android:layout_width="292dp"
         android:layout_height="80dp"
+        android:layout_marginEnd="148dp"
         android:ems="10"
         android:inputType="text"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/editTextText"
-        tools:layout_editor_absoluteY="348dp" />
+        tools:layout_editor_absoluteY="363dp" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/calculatbutton"
         android:layout_width="285dp"
         android:layout_height="144dp"
         android:text="@string/calculation"
@@ -59,10 +61,12 @@
         android:id="@+id/ResultTextView"
         android:layout_width="394dp"
         android:layout_height="112dp"
+        android:layout_marginBottom="168dp"
         android:text=""
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.499"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button" />
 
