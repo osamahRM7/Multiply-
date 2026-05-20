@@ -6,8 +6,6 @@ import androidx.appcompat.app.AppCompatActivity
 import android.widget.TextView
 import android.widget.EditText
 import android.widget.Button
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -15,10 +13,20 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        val TextView = findViewById<TextView>(R.id.textView)
         val writeNumText = findViewById<EditText>(R.id.writeNumText)
-        val WriteNumText2 = findViewById<EditText>(R.id.writeNumText2)
-        val Calculatbutton = findViewById<Button>(R.id.calculatButton)
-        val ResultTextView = findViewById<TextView>(R.id.resultTextView)
+        val writeNumText2 = findViewById<EditText>(R.id.writeNumText2)
+        val calculatbutton = findViewById<Button>(R.id.calculatButton)
+        val resultTextView = findViewById<TextView>(R.id.resultTextView)
+
+        calculatbutton.setOnClickListener {
+            val num1 = writeNumText.text.toString().toIntOrNull()
+            val num2 = writeNumText2.text.toString().toIntOrNull()
+        if (num1 != null && num2 != null) {
+            val result = num1 * num2
+            resultTextView.text = result.toString()
+        } else {
+            resultTextView.text = "Invalid input"
+        }
+        }
     }
 }
