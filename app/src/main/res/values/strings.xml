@@ -3,4 +3,8 @@
     <string name="write_the_number">Write The Number</string>
     <string name="calculation">Calculation</string>
     <string name="result">result</string>
+    <string name="first_number">Enter first number</string>
+    <string name="second_number">Enter second number</string>
+    <string name="enter_first_number">Enter first number</string>
+    <string name="enter_second_number">Enter second number</string>
 </resources>
