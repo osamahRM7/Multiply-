@@ -2,4 +2,5 @@
     <string name="app_name">Multiplyier App</string>
     <string name="write_the_number">Write The Number</string>
     <string name="calculation">Calculation</string>
+    <string name="result">result</string>
 </resources>
